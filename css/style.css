@@ -1,0 +1,120 @@
+
+/* this is for universaal selector */
+*{ margin: 0; padding: 0;box-sizing: border-box;}
+
+/* this is for type selector adding properties and values to the body */
+/* this is for importing fonts from google cdn using html */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+body{font-family:"dancing script", cursive;
+     font-size: small;
+     background-image: url(../images/bayc.jpeg);
+     background-repeat: repeat;
+     background-size:contain;
+     background-position: top;
+}
+
+h1{
+    text-align: center ;color: hotpink;
+}
+p{color: red;}
+/* This is for descendant selector this is used for nested element */
+ul li{
+    color: indigo;
+}
+/* this is for class selector */
+.box{width: 100px;height: 50px;background:rgb(255, 0, 0);}
+/* this is for id selector */
+#box{width: 190px;height: 50px;background:#1281a6;}
+/* this is for child selector */
+#oval{width: 190px;height: 50px;background:rgba(78, 228, 9, 0.2); font-weight: 600}
+body>p{font-size: 50px;}
+/* this is for attribute selector */
+input[type='text'],
+ input[type='email']{
+    padding: 10px;
+    border-bottom-style:double ;border-color: red; border-width: 0 0 2px;
+}
+
+input[type='submit']{
+    padding: 10px; 
+    border-radius: 30px;
+    border:solid yellowgreen;
+}
+.form-group{margin:10px;}
+/* this is for grouping selector */
+
+input[type='text'],
+input[type='email'],
+input[type='submit']{
+    width: 30%;
+}
+/* this is for pseudo-selector */
+input[type="submit"]:hover{
+    background: red; color:white;;
+
+}
+.hundred{width: 700px;height: 1000; background: yellow;
+     margin:0 auto; 
+    /* margin: top right bottom left;
+     margin: 2px 3px 5px 10px;
+     margin: 5px auto; how to center an element */
+     /* everything for margin works the same for padding */
+     /* auto does not work for padding; */
+     padding: o.5px 0.5px; 
+     /* this is for putting border individually
+     border-style:ridge;
+     border-width: 10px; 
+     border-color: yellowgreen;
+     this is for putting border together */
+     border: 2px solid red;
+     /* this is for styling an image */
+    
+}
+.punk{
+    border-radius: 40%;
+    /* they also have border-top-left-radius: ; */
+    width: 200px;
+    border:solid red ;
+}
+.punky{
+    /* text align center is to push the block element to the center */
+    /* while text align justify is to make each text arranged */
+    text-align:justify;
+}
+/* this is for text decoration which is overline, overline or none */
+.nawao a{
+    text-decoration:none;
+    color: black;
+    
+    
+}
+.texted{
+    color: brown;
+    text-decoration: underline;
+    /* this is for text transform values which is either capitalize, uppercase or lowercase */
+    text-transform: capitalize;
+    
+}
+table{
+    width: 50%;
+    border: 2px solid black;
+    /* this is to join all table together */
+    border-collapse: collapse;
+}
+/* styling the tables */
+th, td{
+    border: 1px solid white;
+    padding: 20px 10px;
+    text-align: center;
+}
+th{
+    background-color: #dd3d58;
+    color: #fff;
+}
+tr{
+    background-color: #e2c4c9;
+}
+tr:hover{
+    background-color: #c01c37;
+    color: white;
+}
