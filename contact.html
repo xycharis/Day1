@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <!-- this is how to set the display to either inline, block, inline-block,none -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 1000px;
+        }
+        .boy{
+            display: none;
+        }
+        span{
+            display: inline-block;
+            /* visibility: hidden; */
+        }
+        li{
+            display: inline;
+        }
+        .top{
+            background-color: #000;
+            position: sticky;
+            top: 0;
+            text-align: center;
+            padding: 10px 0;
+            z-index: 1000;
+            opacity: .8;
+        }
+        /* styling the link */
+        .top a{
+            color: white;
+            margin: 10px 5px;
+            text-decoration: none;
+        }
+        .top a:hover{
+            color: orange;
+            transition: 1s ;
+        }
+        .message{
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        black friday begins this week
+    </div>
+    <div class="top">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+    </div>
+    <h1> contact</h1>
+    <ol type="A">
+        <li> ace</li>
+        <li> chukwuemeka</li>
+        <li> charis</li>
+    </ol>
+    <span class="boy"> this is a boy.</span>
+    <span> this is a beautiful girl.</span>
+    <div id="mydiv" onclick="loss()">
+        this div is set to disappear
+    </div>
+    <script>
+        var mydiv =document.querySelector('#mydiv')
+        const loss =()=>{
+            mydiv.style.display="none"
+        }
+    </script>
+   
+ 
+   
+
+    
+</body>
+</html>
